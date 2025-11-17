@@ -753,7 +753,7 @@ ufw allow 1:65535/udp >/dev/null 2>&1 || true
 # ufw allow 22/tcp >/dev/null 2>&1 || true
 # ufw allow 5667/udp >/dev/null 2>&1 || true
 # ufw allow 6000:19999/udp >/dev/null 2>&1 || true
-# ufw allow 49367/tcp >/dev/null 2>&1 || true
+# ufw allow 4936/tcp >/dev/null 2>&1 || true
 # ufw allow 8081/tcp >/dev/null 2>&1 || true
 ufw --force enable >/dev/null 2>&1 || true
 
@@ -779,7 +779,7 @@ systemctl restart zivpn.service
 # ===== Completion Message =====
 IP=$(hostname -I | awk '{print $1}')
 echo -e "\n$LINE\n${G}✅ ZIVPN Enterprise Edition Completed!${Z}"
-echo -e "${C}🌐 WEB PANEL:${Z} ${Y}http://$IP:49367${Z}"
+echo -e "${C}🌐 WEB PANEL:${Z} ${Y}http://$IP:4936${Z}"
 # echo -e "  ${C}Login:${Z} ${Y}$WEB_USER / $WEB_PASS${Z}"
 echo -e "\n${G}🔐 LOGIN CREDENTIALS${Z}"
 echo -e "  ${Y}• Username:${Z} ${Y}$WEB_USER${Z}"
