@@ -612,4 +612,4 @@ def update_user():
     return jsonify({"ok": False, "err": "Invalid data"})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=49367)
+    app.run(host="0.0.0.0", port=4936)
